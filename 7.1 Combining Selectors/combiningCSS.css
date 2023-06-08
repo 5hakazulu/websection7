@@ -1,0 +1,19 @@
+/* Group */
+
+/* this uses a comma to seperate them. it applies to both selectors */
+li, h1{
+    color: aqua;
+}
+
+/* ------  CHILD    ----- */
+/* the small arrow indicates the child of the parent. 
+The first one is the parent and then what follows is the child */
+selector > selector{
+    color: firebrick;
+}
+
+/* -----    Decendent   ------ */
+/* this one has a space between the two. if threre is a an element inside it somewhere that matches it will select it. */
+selector selector{
+    color: blue;
+}
