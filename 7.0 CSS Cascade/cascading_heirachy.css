@@ -1,0 +1,40 @@
+/* CSS has a cascading heirachy */
+/* think of it as the list goes down the list each one will overcome the other. */
+
+/* ----------position------------------- */
+
+/* first thing that it checks is on the postion of the element. */
+
+li{
+    color:red;
+    color: blue;
+}
+
+/* in this case the blue color would be applied  because it is the lowest color element*/
+
+/* ------specificity------- */
+
+/* element */
+li{color: blue;}
+/* class */
+.first-class{
+    color: red;
+}
+/* attribute */
+li[draggable] {color: purple;}
+/* ID */
+#first-id{color: orange;}
+
+/* -------TYPE-------- */
+
+/* external */
+<link rel="stylesheet" href="./style.css">
+/* internal */
+<style></style>
+/* inline */
+<p style="">White Text</p>
+
+/* --------IMPORTANCE-------- */
+li{
+    color: red !important;
+}
