@@ -17,3 +17,9 @@ selector > selector{
 selector selector{
     color: blue;
 }
+
+/* -----  Chaining   ----- */
+/* apply where all selectors are true. */
+selectorselector{
+    color:azure;
+/* }it is only applied when all the elements are true */
